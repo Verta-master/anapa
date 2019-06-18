@@ -957,8 +957,121 @@ button {
 .swiper-button-next {
   background-image: url(../img/icons/icon-next.svg);
   background-size: 22px 47px;
+  outline: none;
 }
 .swiper-button-prev {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #093e5c;
+  border: 1px solid #39608c;
+  outline: none;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 15px;
+}
+.content__slider3,
+.content__slider2 {
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+}
+.content__box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 266px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  text-align: center;
+}
+.content__box p {
+  margin-bottom: 0;
+}
+.content__icon {
+  height: 81px;
+}
+.content__logo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 266px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content__logo img {
+  display: block;
+}
+.footer {
+  color: #fff;
+  background-color: #093e5c;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer__name {
+  max-width: 250px;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+}
+.footer__name span {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+}
+.footer__info {
+  width: 580px;
+}
+.footer__block {
+  width: 280px;
+}
+.footer__title {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__item {
+  margin-top: 30px;
+}
+.footer__item a:hover,
+.footer__item a:active {
+  border-bottom: 1px solid #fff;
 }
