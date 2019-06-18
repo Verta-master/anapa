@@ -1,3 +1,27 @@
 .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(57, 96, 140);
+}
+
+.title__name {
+  margin: 0;
+  color: @red;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title__link {
+  color: @blue;
+  border-bottom: 1px solid @blue;
+  .transition();
   
+  &:hover,
+  &:active {
+    border-color: rgba(255,255,255,0);
+    .transition();
+  }
 }
