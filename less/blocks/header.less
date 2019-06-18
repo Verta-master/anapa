@@ -1,0 +1,66 @@
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.header__link {
+  display: block;
+  position: relative;
+  margin-left: 30px;
+  color: @blue;
+  border-bottom: 1px solid @blue;
+  .transition();
+  
+  &:hover,
+  &:active {
+    border-color: #fff;
+    .transition();
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  &--eye::before {
+    background-image: url(../img/icons/icon-eye.png);
+  }
+    
+  &--order::before {
+    background-image: url(../img/icons/icon-person.png);
+  }
+    
+  &--location::before {
+    background-image: url(../img/icons/icon-location.png);
+  }
+    
+  &--call::before {
+    background-image: url(../img/icons/icon-q.png);
+  }
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.header__title {
+  width: 780px;
+  margin: 0;
+  font-size: 26px;
+  line-height: 30px;
+}
